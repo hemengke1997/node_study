@@ -1,7 +1,3 @@
-# 记录学习nodeJS的过程
-
-## 基础知识
----
 ## node.js入门 :bowtie:
 学node.js，我认为要先了解它的[历史](https://www.jianshu.com/p/4e45641123dc):smile:。  
 ##### - node.js问世于2009年  
@@ -482,6 +478,7 @@ Url {
 + domain
 
 #### web模块
+web模块分为web服务器和web客户端，服务器接收请求返回数据给客户端
 
 ##### web服务器
 ```
@@ -519,6 +516,14 @@ test.html
 ```
 
 ##### web客户端
+... :pensive: 暂时不写基础知识了 剩下的也不多了 主要是感觉有点枯燥 实际做项目的时候再补充这一部分​
 
 
+## 框架学习
+
+### Koa --  基于Node.js 平台的下一代web开发框架 :fire:
+
+#### 简介：koa是由express原班人马打造的一款新的web框架  
+
+![](C:\Users\SNQU\Documents\2345截图\2345截图20190801172800.png)
 
