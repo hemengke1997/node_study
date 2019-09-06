@@ -1,4 +1,5 @@
-## node.js入门 :bowtie:
+node.js入门 :bowtie:
+
 学node.js，我认为要先了解它的[历史](https://www.jianshu.com/p/4e45641123dc):smile:。  
 ##### - node.js问世于2009年  
 ##### - 2009年 提出了npm
@@ -525,5 +526,99 @@ test.html
 
 #### 简介：koa是由express原班人马打造的一款新的web框架  
 
-![](C:\Users\SNQU\Documents\2345截图\2345截图20190801172800.png)
+
+
+
+
+## MongoDB 学习
+
+### 安装
+
++ 官网下载 w64 .msi文件
+
++ 安装之后配置 `bin` 目录环境变量
+
++ ``` 
+  mongod --version  // 检查版本
+  ```
+
+### 启动
+
+1. 首先在安装MongoDB的根目录下创建/data/db文件
+2. + 可以在安装盘下使用命令行 `mongod ` 启动
+     +  这种情况下 可以 `ctrl c` 关闭
+
+### 连接
+
++ 在mongo启动的状态下，重新cmd，输入命令 `mongo` 即可连接到本机
+  + 这种情况下， 可以输入 `exit` 断开连接
++ 在MongoDB启动的状态下，打开可视化工具，点击connect
+
+### 操作
+
+#### 1. 基本命令
+
++ `show dbs`
+  + 查看显示所有的数据库
++ `use <数据库名称>`
+  + 切换到指定的数据库（如果没有的话，会新建一个）
++ `db` 
+  + 查看当前使用的数据库
+
+#### 2. nodeJS操作 
+
++ 使用官方提供的 [`Mongo DB Native NodeJS Driver`](https://github.com/mongodb/node-mongodb-native)
++ 使用第三方提供的 [`mongoose`](https://github.com/Automattic/mongoose) (对官方api进行了第二次封装) 
++ [mongoose官网](https://mongoosejs.com/)
+
+
+
+#### 使用mongoose
+
++ 安装 `mongoose` 
+
+  + ``` shell
+    如果是在一个新的文件夹里面，先
+    npm i
+    ```
+
+  + ``` shell
+    npm install mongoose
+    ```
+
++ 在 js 文件中引入`mongoose` 模块
+
+  + ``` js
+    // getting-started.js
+    var mongoose = require('mongoose');
+    // 连接 test 集合
+    mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true});
+    ```
+
++ 然后可以开始操作了
+
+#### mongodb的几个概念
+
++ 数据库
+  + 集合（类似于关系型数据库中的表）
+    + 文档 （表中的一行记录）
+      + 索引 （index）
+      + 主键 （primary key）
+    + 域（field） （数据字段）
++ ![对比](https://www.runoob.com/wp-content/uploads/2013/10/Figure-1-Mapping-Table-to-Collection-1.png)
++ mongoDB中的数据类型
+  + String
+  + Integer
+  + Boolean
+  + Double （双精度浮点值）
+  + Array
+  + Timestamp （时间戳）
+  + Object
+  + Null
+  + Symbol  （符号）
+  + Date
+  + Object ID （对象ID，用于创建文档的ID）
+  + Binary Data （二进制数据）
+  + Code （代码类型）
+  + Regular expression （正则表达式）
 
