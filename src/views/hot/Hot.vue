@@ -1,6 +1,5 @@
 <template>
   <div class="hot">
-    
     <div class="hot_top">
       <div class="banner">
         <div class="ignore_hot_icon"></div>

@@ -1,0 +1,76 @@
+{
+  "code": 200,
+  "result": [{
+      "id": 2972838322,
+      "type": 0,
+      "name": "风起叶落，是最适合想念的季节啊",
+      "copywriter": "编辑推荐：比起夏的炽热 好像更中意秋的温柔",
+      "picUrl": "img/plCover/109951164347198857.jpg",
+      "canDislike": false,
+      "playCount": 2653369,
+      "trackCount": 40,
+      "highQuality": false,
+      "alg": "featured"
+    },
+    {
+      "id": 2820956491,
+      "type": 0,
+      "name": "耳边呢喃 | 天鹅绒之夜",
+      "copywriter": "编辑推荐：朦胧暧昧，又耐人寻味",
+      "picUrl": "img/plCover/109951164313545845.jpg",
+      "canDislike": false,
+      "playCount": 597310,
+      "trackCount": 31,
+      "highQuality": false,
+      "alg": "featured"
+    },
+    {
+      "id": 2301227992,
+      "type": 0,
+      "name": "欧美精选 | 嗨 伙计 要来首10w+吗？",
+      "copywriter": "热门推荐",
+      "picUrl": "img/plCover/vu236KSx8gQZ4o7Qys6pR.jpg",
+      "canDislike": true,
+      "playCount": 46055104,
+      "trackCount": 41,
+      "highQuality": false,
+      "alg": "cityLevel_A"
+    },
+    {
+      "id": 988690134,
+      "type": 0,
+      "name": "经典老歌，久听不厌",
+      "copywriter": "热门推荐",
+      "picUrl": "img/plCover/VFd5cboNTbnYsWZ5DBn9bg==_18953381440004340.jpg",
+      "canDislike": true,
+      "playCount": 115609968,
+      "trackCount": 115,
+      "highQuality": true,
+      "alg": "cityLevel_A"
+    },
+    {
+      "id": 2170976338,
+      "type": 0,
+      "name": "滚石香港黄金十年",
+      "copywriter": "热门推荐",
+      "picUrl": "img/plCover/6k6L9DtmNyDQ2elG1smxyw==_19064432114600478.jpg",
+      "canDislike": true,
+      "playCount": 8512256,
+      "trackCount": 100,
+      "highQuality": false,
+      "alg": "cityLevel_A"
+    },
+    {
+      "id": 395100131,
+      "type": 0,
+      "name": "【华语篇】成长 都是闪着泪光的决定",
+      "copywriter": "热门推荐",
+      "picUrl": "img/plCover/109951162913202465.jpg",
+      "canDislike": true,
+      "playCount": 2812202,
+      "trackCount": 49,
+      "highQuality": false,
+      "alg": "cityLevel_A"
+    }
+  ]
+}

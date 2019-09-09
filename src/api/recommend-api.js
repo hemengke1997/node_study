@@ -2,11 +2,7 @@ import axios from 'axios'
 import {HOST} from 'js/config'
 
 function getSheetList() {  // 获取推荐歌单
-    // const url = HOST + '/personalized'
-    const url = '/api/personalized'
-    axios.get(url).then(res=>{
-        console.log(res)
-    })
+    const url = HOST + '/personalized'
     return axios.get(url)
 }
 

@@ -5,7 +5,7 @@
       <ul class="sheet_ul">
         <li class="sheet_li" v-for="item in sheetList" :key="item.id" @click="selectList(item.id)">
           <div class="cover">
-            <img v-lazy="item.picUrl" />
+            <img :src="`${publicPath}${item.picUrl}`"/>
             <div class="play_count">
               <i class="iconfont icon-erji"></i>
               <span>{{Math.floor(item.playCount / 10000) }}万</span>
@@ -44,7 +44,8 @@ export default {
         red: false,
         SQ: true,
         rank: false
-      }
+      },
+      publicPath: process.env.BASE_URL
     };
   },
   components: {
@@ -81,8 +82,9 @@ export default {
     },
     _getSheetList() {
       getSheetList().then(res => {
+        console.log(res)
         if (res.status === OK) {
-          this.sheetList = res.data.result.splice(0, 6);
+          this.sheetList = res.data[0].result.splice(0, 6);
         } else {
           console.log("获取推荐歌单失败");
         }
@@ -90,6 +92,7 @@ export default {
     },
     _getNewSong() {
       getNewSong().then(res => {
+        console.log(res)
         if(res.status === OK) {
           this.isLoading = false
           this.tempSongs = res.data.result

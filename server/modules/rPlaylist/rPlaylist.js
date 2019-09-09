@@ -22,4 +22,3 @@ const RecommendPlaylist = mongoose.model('RecommendPlaylist', RecommendPlaylistS
 
 
 module.exports = RecommendPlaylist
-
